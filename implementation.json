@@ -1,0 +1,28 @@
+{
+    "type": "implementation",
+    "short-name":"c",
+    "description":"Template implementation for C",
+    "language":"c",
+    "core-source-files":[
+    ],
+    "runner-source-file": { "file": "./runner.c" },
+    "runner-arguments": [
+        { "expand": "/experiment/input-size" }
+    ],
+    "libraries":[
+        { "file": "./common/common.c"}
+    ],
+    "include-directories":[
+        { "file": "./common/"}
+    ],
+    "dependencies": [
+        {
+            "source": "https://github.com/Sable/ostrich-c-implementation-common.git",
+            "destination": "./common"
+        }
+    ],
+    "compatibilities": [
+        "https://github.com/Sable/ostrich-gcc-compiler.git",
+        "https://github.com/Sable/ostrich-native-environment.git"
+    ]
+}
