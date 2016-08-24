@@ -10,7 +10,8 @@
         { "expand": "/experiment/input-size" }
     ],
     "libraries":[
-        { "file": "./common/common.c"}
+        { "file": "./common/common.c" },
+        { "file": "./common/ostrich_twister_rand.c" }
     ],
     "include-directories":[
         { "file": "./common/"}
