@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     checksum = verify(input_size, output, output_size); 
 
     // Display output
-    printf("{ \"input\": %d, \"time\": %f, \"output\": %d}", input_size, elapsedTime, checksum);
+    printf("{ \"input\": %d, \"time\": %f, \"output\": %d}\n", input_size, elapsedTime, checksum);
     
     return 0;    
 }
